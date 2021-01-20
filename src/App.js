@@ -13,7 +13,7 @@ import SearchBar from './components/SearchBar/SearchBar'
 import dummyData from './dummy-data'
 import './App.css';
 
-debugger;
+
 const App = () => {
 
   const [posts, setPosts] = useState(dummyData);
@@ -46,7 +46,7 @@ const App = () => {
       
       {/* Add SearchBar and Posts here to render them */}
       <SearchBar />
-      <Posts likePost={likePost} posts={posts}/>
+      <Posts posts={posts} likePost={likePost} />
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );
